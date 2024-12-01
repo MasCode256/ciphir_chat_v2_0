@@ -1,0 +1,10 @@
+:root {
+  --bg: #000;
+
+  --primary: #0f0;
+  --secondary: #fff;
+
+  --ff: "Consolas";
+
+  --tt: 0.1s;
+}

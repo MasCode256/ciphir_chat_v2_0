@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Загрузка...</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/jpg" href="favicon.jpg" />
+    <script src="js/functions.js"></script>
+    <script src="js/crypto-js.min.js"></script>
+    <audio id="new_message" src="new_message.mp3" preload="auto"></audio>
+  </head>
+  <body>
+    <div class="top">
+      <a id="logo" href="alpha.html" class="p logo">Ciphira Chat v2.24.12</a>
+      <button class="empty"></button>
+      <button class="empty"></button>
+      <button class="empty"></button>
+      <button class="empty"></button>
+      <button class="empty"></button>
+      <a href="" class="s a" onclick="localStorage.clear()"
+        >Очистить хэш-таблицу</a
+      >
+      <button class="empty"></button>
+      <button class="empty"></button>
+      <a class="s a" href=""> Перейти на github </a>
+    </div>
+    <button class="empty mrg"></button>
+    <div class="content">
+      <div class="chat" id="chat"></div>
+      <input
+        id="msg"
+        type="text"
+        class="input"
+        placeholder=" // Новое сообщение (вы можете вставлять HTML-код)"
+      />
+      <p></p>
+      <input id="name" type="text" class="input p50" placeholder=" // Имя" />
+      <input
+        id="key"
+        type="password"
+        class="input p50"
+        placeholder=" // Ключ шифрования"
+      />
+    </div>
+    <script defer src="js/script.js"></script>
+  </body>
+</html>

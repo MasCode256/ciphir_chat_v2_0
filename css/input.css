@@ -1,0 +1,35 @@
+.input {
+  width: 95%;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-right: 1%;
+  padding-left: 1%;
+  border: 2px solid var(--primary); /* Цвет рамки */
+  border-radius: 5px; /* Закругление углов */
+  font-size: 16px; /* Размер шрифта */
+  transition: all var(--tt) ease-in-out; /* Плавный переход цвета рамки */
+  background: transparent;
+  margin-left: 1%;
+  margin-right: 1%;
+  font-family: var(--ff);
+  color: var(--txt);
+
+  &.p50 {
+    width: 40%;
+    margin-right: 0.2%;
+  }
+}
+
+.input:focus {
+  border-color: transparent; /* Цвет рамки при фокусе */
+  outline: none; /* Убираем стандартный контур */
+}
+
+.input:hover {
+  border-color: var(--txt);
+}
+
+.input::placeholder {
+  color: #999; /* Цвет текста плейсхолдера */
+  opacity: 1; /* Уровень прозрачности */
+}
